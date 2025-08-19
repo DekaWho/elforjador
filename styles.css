@@ -173,7 +173,7 @@ h3 {
 h2 {
   color: #FF4FDD;
   font-weight: 500;
-  font-size: clamp(1.4rem, 1.7vw, 3rem);
+  font-size: clamp(1.2rem, 1.4vw, 3rem);
   line-height: 1.2;
 }
 
