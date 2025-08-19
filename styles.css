@@ -13,24 +13,29 @@ html {
 }
 
 button {
-  background: linear-gradient(90deg, #00E5FF, #FF4FDD);
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 0.8rem 1.8rem;
+  padding: 1.8rem 1.8rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  text-transform: uppercase;
   letter-spacing: 1px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-top: 1rem;
   margin-bottom: 2em;
+  background: linear-gradient(270deg, #FF4FDD, #b202f8, #FF4FDD);
+  background-size: 200% 200%;
+  box-shadow: 
+    inset 2px 2px 6px rgba(255,255,255,0.3),  /* brillo interior arriba */
+    inset -2px -2px 6px rgba(0,0,0,0.4),      /* sombra interior abajo */
+    0 6px 18px rgba(0,0,0,0.5);               /* sombra exterior */
+  transition: background-position 0.3s ease;
 }
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 15px rgba(0, 234, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.7);
+  background-position: 100% 0;
 }
 
 body {
@@ -48,6 +53,29 @@ body {
 
   padding-top: 5rem;
   padding-bottom: 8rem;
+
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Núcleo brillante (barra) */
+.banner::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 6px;                  /* dentro del banner */
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(90deg, #ff47cf, #b202f8);
+  box-shadow:
+    0 0 30px 10px #ff47cf,
+    0 0 40px 18px #b202f8,
+    0 0 80px 40px #b202f8;
+  mix-blend-mode: screen;       /* suma luz sobre fondo oscuro */
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .menu {
@@ -77,7 +105,7 @@ body {
 }
 
 .links a {
-  color: white;
+  color: rgb(218, 218, 218);
   text-decoration: none;
 }
 
@@ -171,7 +199,7 @@ h3 {
 }
 
 h2 {
-  color: #FF4FDD;
+  color: white;
   font-weight: 500;
   font-size: clamp(1.2rem, 1.4vw, 3rem);
   line-height: 1.2;
@@ -410,6 +438,16 @@ a:hover {
   .links a:hover{
     color:#A2FAA3;
   }
+
+  button {
+  padding: 1.2rem 1.8rem;
+  font-size: 1.2rem;
+  }
+
+  .banner::before {
+    opacity: 0;
+  }
+
 
   #menu-toggle{ display:none; }
   #menu-toggle:checked + .burger + .links{ display:flex; }

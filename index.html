@@ -49,17 +49,17 @@
 
       <div class="hero-text">
         <h1>
-          En tiendas online americanas el <u style="text-underline-offset: -0.1em; text-decoration-thickness: 0.2em; text-decoration-color:rgba(255, 79, 221, 0.8);">28% de la facturación</u> viene de algo que aquí casi no se usa</u> por considerarlo "anticuado"
+          En tiendas online americanas el <span style="text-underline-offset: -0.1em; text-decoration-thickness: 0.2em; color:white;">28% de la facturación</span> viene de algo que aquí casi no se usa</u> por considerarlo "anticuado"
         </h1>
 
         <h2>
-          Si vendes productos de consumo tu competencia no lo está exprimiendo todavía. Aprovéchate de ello ⬇
+          Si vendes productos de consumo tu competencia no lo está exprimiendo todavía. Aprovéchate de ello
         </h2>
 
         <br>
         <div style="text-align: center;">
           <button onclick="document.getElementById('mail-form').scrollIntoView({ behavior: 'smooth' });">
-              Copia la fórmula americana
+              Copia la fórmula americana ➜
           </button>
         </div>
 
@@ -70,19 +70,18 @@
     <!-- Este solo se ve en móvil -->
     <section class="heroM">
       <div class="heroM-text">  
-
         <h1>
-          En tiendas online americanas el <u style="text-underline-offset: -0.1em; text-decoration-thickness: 0.2em; text-decoration-color:rgba(255, 79, 221, 0.8);">28% de la facturación</u> viene de algo que aquí casi no se usa</u> por considerarlo "anticuado"
+          En tiendas online americanas el <span style="text-underline-offset: -0.1em; text-decoration-thickness: 0.2em; color:white;">28% de la facturación</span> viene de algo que aquí casi no se usa</u> por considerarlo "anticuado"
         </h1>
 
         <h2>
-          Si vendes productos de consumo tu competencia no lo está exprimiendo todavía. Aprovéchate de ello ⬇
+          Si vendes productos de consumo tu competencia no lo está exprimiendo todavía. Aprovéchate de ello
         </h2>
 
         <br>
         <div style="text-align: center;">
           <button onclick="document.getElementById('mail-form').scrollIntoView({ behavior: 'smooth' });">
-              Copia la fórmula americana
+              Copia la fórmula americana ➜
           </button>
         </div>
 
@@ -732,7 +731,7 @@
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
         /* background: linear-gradient(to left, #FF4FDD, #14E1FE); */
-        border-color: #14E1FE;
+/*         border-color: #14E1FE;
         border-style: solid;
         border-width: 1px;
         border-radius: 25px;
@@ -746,11 +745,31 @@
         margin: 0 !important;
         padding: 10px !important;
         width: 100%;
-        height: auto;
+        height: auto; */
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0.8rem 1.8rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        margin-top: 1rem;
+        margin-bottom: 2em;
+        background: linear-gradient(270deg, #FF4FDD, #b202f8, #FF4FDD);
+        background-size: 200% 200%;
+        box-shadow: 
+          inset 2px 2px 6px rgba(255,255,255,0.3),  /* brillo interior arriba */
+          inset -2px -2px 6px rgba(0,0,0,0.4),      /* sombra interior abajo */
+          0 6px 18px rgba(0,0,0,0.5);               /* sombra exterior */
+        transition: background-position 0.3s ease;
       }
 
-      #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {        
-        box-shadow: 0 0 15px rgba(0, 234, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.7) !important;
+      #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
+  transform: translateY(-2px) !important;
+  background-position: 100% 0 !important;
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
@@ -811,7 +830,7 @@
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-        color: white;    
+        /* color: white;    
         background: linear-gradient(90deg, #00E5FF, #FF4FDD) !important;  
         border: none !important;
         border-radius: 8px !important;
@@ -825,7 +844,26 @@
         padding: 0.8rem 1.8rem;
         width: 100% !important;
         box-sizing: border-box !important;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;      
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; */
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1.2rem 1.8rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        margin-top: 1rem;
+        margin-bottom: 2em;
+        background: linear-gradient(90deg, #00E5FF, #243afc, #00E5FF);
+        background-size: 200% 200%;
+        box-shadow: 
+          inset 2px 2px 6px rgba(255,255,255,0.3),  /* brillo interior arriba */
+          inset -2px -2px 6px rgba(0,0,0,0.4),      /* sombra interior abajo */
+          0 4px 6px rgba(0, 0, 0, 0.3);               /* sombra exterior */
+        transition: background-position 0.3s ease;      
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
@@ -833,7 +871,8 @@
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;  
+  transform: translateY(-2px);
+  background-position: 100% 0;
       }
 
       .ml-subscribe-close {
