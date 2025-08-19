@@ -441,8 +441,8 @@ a:hover {
   }
 
   button {
-  padding: 1.2rem 1.8rem;
   font-size: 1.2rem;
+  padding: 1em 1.8rem;
   }
 
   .banner::before {
