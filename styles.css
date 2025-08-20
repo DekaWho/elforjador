@@ -15,15 +15,14 @@ html {
 button {
   color: #fff;
   font-size: 1.5rem;
-  font-weight: bold;
-  padding: 1.8rem 1.8rem;
+  font-weight: 300;
+  padding: 1.3rem 1.5rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-top: 1rem;
-  margin-bottom: 2em;
   background: linear-gradient(270deg, #FF4FDD, #b202f8, #FF4FDD);
   background-size: 200% 200%;
   box-shadow: 
@@ -143,10 +142,8 @@ body {
   /* Centra verticalmente */
 
   margin: 1rem auto;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-top: 0;
-
-  line-height: 1.5;
 }
 
 .hero-image {
@@ -347,10 +344,7 @@ a:hover {
     padding: 0;
     margin: 0;
   }
-
-  h2 {
-    text-align: left;
-  }
+ 
 
   p {
     margin-bottom: clamp(5rem, 7vw, 10rem);
