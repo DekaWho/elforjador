@@ -31,9 +31,9 @@
   <label for="menu-toggle" class="burger">&#9776;</label>
 
   <div class="links">
-    <a href="#mail-form">Copia el secreto americano</a>
-    <a href="#sobre-mi">Quién soy</a>
-    <a href="/principios" target="_blank">Mis 4 principios</a>
+    <a href="#mail-form">| copia la fórmula |</a>
+    <a href="#sobre-mi">| quién soy |</a>
+    <a href="/principios" target="_blank">| mis 4 principios |</a>
   </div>
 </nav>
 
@@ -48,12 +48,12 @@
       </div>
 
       <div class="hero-text">
-        <h1>
-          En tiendas online americanas <span style="text-underline-offset: -0.1em; text-decoration-thickness: 0.2em; color:white;">el 28% de la facturación</span> viene de algo que aquí casi no se usa</u> por considerarlo "anticuado"
+        <h1 style="color: white;">
+          Cómo ganar más clientes en tu tienda online <span style="text-underline-offset: -0.1em; text-decoration-thickness: 0.2em; color:#00E5FF;">con menos gasto en publicidad</span> usando la fórmula americana 🇺🇸</span> 
         </h1>
 
         <h2>
-          Si vendes productos de consumo tu competencia no lo está exprimiendo todavía. Aprovéchate de ello.
+          En los e-commerce españoles de productos físicos no se está exprimiendo todavía. Aprovéchalo.
         </h2>
 
         <br>
@@ -70,12 +70,12 @@
     <!-- Este solo se ve en móvil -->
     <section class="heroM">
       <div class="heroM-text">  
-        <h1>
-          En tiendas online americanas <span style="text-underline-offset: -0.1em; text-decoration-thickness: 0.2em; color:white;">el 28% de la facturación</span> viene de algo que aquí casi no se usa</u> por considerarlo "anticuado"
+        <h1 style="color: white;">
+          Cómo ganar más clientes en tu tienda online <span style="text-underline-offset: -0.1em; text-decoration-thickness: 0.2em; color:#00E5FF;">con menos gasto en publicidad</span> usando la fórmula americana 🇺🇸</span> 
         </h1>
 
         <h2>
-          Si vendes productos de consumo tu competencia no lo está exprimiendo todavía. Aprovéchate de ello.
+          En los e-commerce españoles de productos físicos no se está exprimiendo todavía. Aprovéchalo.
         </h2>
 
         <br>
@@ -96,12 +96,12 @@
   <div class="cuerpo">
 
     <p>
-      Las e-commerce americanas no se centran solo en captar clientes (aunque también hacen publicidad, obvio) Tienen un "secreto" para ir más allá de la primera venta.
+      Las tiendas americanas no se centran solo en captar clientes (aunque también hacen publicidad, obvio) Tienen un "secreto" para ir más allá de la primera venta.
     </p>
 
     <p>
       <strong>
-        Durante años me he obsesionado con entender qué hay después de captar un comprador. Porque esa es <u style="text-decoration-color: #00E5FF;">la clave para poder escalar sin morir de éxito.</u> Me llamo:
+        Durante años me he obsesionado con entender qué hay después de la captación. Porque es <u style="text-decoration-color: #00E5FF;">la clave para no depender de anuncios</u> (y evitar aumentar el gasto en publicidad cada mes) Soy:
       </strong>
     </p>
     
@@ -113,7 +113,7 @@
     <div class="callout-azul">
 
     <p>
-      Soy el forjador, un herrero de la recurrencia ➜&nbsp;construyo con sudor y fuego las herramientas para que tu cliente compre (y vuelva a comprar)
+      Me dedico a aumentar la facturación de tiendas online sin gastar más en publicidad (y sin necesidad de inteligencia artificial) ➜&nbsp; Soy el forjador, un herrero de las ventas recurrentes.
     </p>
 
     <p>
@@ -145,7 +145,7 @@
     <div class="callout-rosa" id="mail-form">
 
       <p style="margin-bottom: 1em;">
-          Un documento (se lee en 3 minutos) con el "secreto" de los americanos (no es la IA) para crear clientes dispuestos a levantarse del sofá, ir a por la cartera y lanzarte su <span style="background-color: rgba(255, 79, 221, 0.4);">dinero repetidamente</span>
+        Descarga el documento "confidencial" (se lee en 3 minutos) con el truco de los americanos <span style="background-color: rgba(255, 79, 221, 0.4);">y cuánto facturan con él.</span>
       </p>      
     
 
@@ -1203,12 +1203,34 @@
       </div>
     </div>
 
-    <script>
+<!--     <script>
       function ml_webform_success_27786331() {
         try {
           window.top.location.href = 'https://elforjador.com/not-done';
         } catch (e) {
           window.location.href = 'https://elforjador.com/not-done';
+        }
+      }
+    </script> -->
+
+<!-- Popup oculto -->
+<div id="ml-success-popup" 
+     style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999;">
+    <!-- Iframe vacío (sin src) -->
+    <iframe id="ml-success-frame" style="width:100%; height:100%; border:none;"></iframe>
+
+</div>
+
+    <script>
+      function ml_webform_success_27786331() {
+        try {
+          // Mostrar popup
+          document.getElementById("ml-success-popup").style.display = "flex";
+          // Cargar not-done.html dentro del iframe
+          document.getElementById("ml-success-frame").src = "not-done.html";
+        } catch (e) {
+          // Si algo falla, redirigir
+          window.location.href = "not-done.html";
         }
       }
     </script>

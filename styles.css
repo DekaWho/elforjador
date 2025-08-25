@@ -1,15 +1,17 @@
-/* PALETA */
-
-/* color: #FF4FDD;
-      color: #00E5FF;
-      color: #F40600;
-      color: #FFC857;
-      color: #CCFF66;
-      color: #5D2E8C; */
-
 html {
   scroll-behavior: smooth;
   font-size: 18px;
+
+  /* PALETA */
+
+  /*
+  color: #FF4FDD;
+  color: #00E5FF;
+  color: #F40600;
+  color: #FFE066;
+  color: #CCFF66;
+  color: #5D2E8C;
+  */
 }
 
 button {
@@ -98,12 +100,8 @@ body {
 }
 
 .links a {
-  color: rgb(218, 218, 218);
+  color: rgb(235, 235, 235);
   text-decoration: none;
-}
-
-.links a:hover {
-  font-style: italic;
 }
 
 /* Ocultar checkbox */
@@ -199,11 +197,13 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: #FF4FDD;
   font-weight: 500;
-  font-size: clamp(1.1rem, 1.4vw, 2rem);
+  font-size: clamp(1.1rem, 1.3vw, 3rem);
   line-height: 1.2;
   margin-bottom: 0;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 p {
@@ -263,7 +263,7 @@ a {
 }
 
 a:hover {
-  color: #A2FAA3;
+  font-style: italic;
   transition: all 0.1s ease;
 }
 
@@ -313,7 +313,8 @@ a:hover {
 }
 
 ::selection {
-  background-color: #A2FAA3;
+  background-color: #FFE066;
+  color: #252422;
 }
 
 @media (max-width: 1000px) {
@@ -421,14 +422,9 @@ a:hover {
     box-shadow:0 12px 28px rgba(0,0,0,.25);
   }
 
-  .links a{
-    color:#fff;
+  .links a {
     text-decoration:none;
     font-size:1.15rem;
-  }
-
-  .links a:hover{
-    color:#A2FAA3;
   }
 
   button {
