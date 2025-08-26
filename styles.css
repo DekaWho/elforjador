@@ -320,7 +320,7 @@ a:hover {
 @media (max-width: 1000px) {
   .banner {
     padding-bottom: 0;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     /* para que no tape el menú los títulos */
   }
 
@@ -344,6 +344,11 @@ a:hover {
   h1 {
     padding: 0;
     margin: 0;
+  }
+
+  h2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
   }
  
 
