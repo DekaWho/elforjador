@@ -54,7 +54,7 @@ button:hover {
 
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   color: #252422;
   margin: 0;
   padding: 0;
@@ -81,8 +81,7 @@ body {
 
   padding: 1em;
   z-index: 1000;
-  display: flex;
-  justify-content: flex-end;
+  display: flex-end;
 
   background: rgb(21, 21, 21, 0.4);
   backdrop-filter: blur(5px);              /* desenfoque del fondo */
@@ -100,7 +99,8 @@ body {
 }
 
 .links a {
-  color: rgb(235, 235, 235);
+  font-weight: 200;
+  color: white;
   text-decoration: none;
 }
 
@@ -113,8 +113,7 @@ body {
   display: none;
 }
 
-#sobre-mi,
-#que-hago, #mail-form {
+[id] {
   scroll-margin-top: 5rem; /* que el menú deje un poco de aire cuando te lleva a algún lado */
 }
 
@@ -191,8 +190,8 @@ h1 {
   font-size: clamp(2.5em, 3.5vw, 7em);
   margin-bottom: 0;
   line-height: 1.1;
-  color: #00E5FF;
-  font-weight: 500;  /* 500 porque si no Safari lo ponía mega gordo */
+  color: #000000;
+  font-weight: 500;
   padding: 1rem;
 }
 
@@ -386,8 +385,7 @@ a:hover {
   }
 
  .menu{
-    position: fixed; top:0; right:0;
-    left:auto; width:auto;
+    position: fixed; top:0; width:100%;
     background:none; backdrop-filter:none;
     display:block;
   }
@@ -411,14 +409,16 @@ a:hover {
   }
 
   .links{
-    position:fixed;         
-    top: 3.3rem;      
-    right: 0;
+    position:fixed; 
+    width: 100%;        
+    top: 3.3rem;
     display:none;
     flex-direction:column;
     padding: 1rem;
-    margin-right: 0;
     gap: 1rem;
+    justify-content: center;
+    text-align: center;
+
     background: rgba(21,21,21,.45);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
