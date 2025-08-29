@@ -14,12 +14,6 @@ html {
   */
 }
 
-@font-face {
-  font-family: "Noto Color Emoji";
-  src: url("/fonts/NotoColorEmoji.ttf") format("truetype");
-  font-display: swap;
-}
-
 
 button {
   color: #fff;
@@ -61,7 +55,7 @@ button:hover {
 
 
 body {
-  font-family: "IBM Plex Sans", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-family: "IBM Plex Sans", "Segoe UI Emoji", sans-serif;
   color: #252422;
   margin: 0;
   padding: 0;
@@ -193,7 +187,7 @@ h3 {
 }
 
 h1 {
-  font-family: "Staatliches", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-family: "Staatliches", "Segoe UI Emoji", sans-serif;
   font-size: clamp(2.5em, 3.5vw, 7em);
   margin-bottom: 0;
   line-height: 1.1;
@@ -321,6 +315,11 @@ a:hover {
 ::selection {
   background-color: #FFE066;
   color: #252422;
+}
+
+.emoji {
+  width: 1.3em; 
+  vertical-align: middle;
 }
 
 @media (max-width: 1000px) {
