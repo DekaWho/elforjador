@@ -219,6 +219,15 @@ h1 {
   padding: 2rem;
 }
 
+.titulo-hr {
+  font-family: 'Staatliches', sans-serif;
+  font-size: clamp(4em, 4.5vw, 7em);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
+
 h2 {
   color: #FF4FDD;
   font-weight: 500;
@@ -404,6 +413,11 @@ audio::-webkit-media-controls-panel {
   .titulo-reviews{
       font-size: 3rem;
       padding: 0;
+  }
+
+  .titulo-hr {
+    font-size: clamp(3em, 4.5vw, 7em);
+    margin-top: 1em;
   }
 
   h2 {
