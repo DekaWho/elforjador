@@ -33,7 +33,7 @@ button { /* sencillo */
   color: #fff;
   font-size: 1.5rem;
   font-weight: 300;
-  padding: 1.3rem 1.5rem;
+  padding: 0.8em 1.2em;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -316,6 +316,7 @@ a:hover {
 }
 
 .callout-linea {
+  max-width: 99vw;
   padding-top: 0;
   margin-top: 0;
   border: 2px solid rgba(255, 79, 221, 0.6);
@@ -414,7 +415,7 @@ audio::-webkit-media-controls-panel {
   }
 
   .callout-azul,
-  .callout-verde,
+  .callout-linea,
   .callout-rosa {
     /* hacerlo más ancho que el padre */
     position: relative;
@@ -491,9 +492,8 @@ audio::-webkit-media-controls-panel {
 
   .glow {
     font-size: 1.2rem;
-    padding: 1rem 1.8rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
 
