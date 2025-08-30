@@ -125,10 +125,9 @@ body {
   gap: 1rem;
   /* Espacio entre columnas */
 
-  max-width: 80vw;
+  max-width: 78vw;
   margin: 1rem auto;
-  padding: 0 1rem;
-  margin-top: 0;
+  margin-top: 3rem;
 
   flex-wrap: wrap;
   overflow-x: hidden;
@@ -139,14 +138,14 @@ body {
   align-items: center;
   /* Centra verticalmente */
 
-  margin: 1rem auto;
-  padding: 1rem;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-image {
   flex: 1;
   /* parte más pequeña */
+  margin-right: 3rem;
 }
 
 .hero-text {
@@ -189,10 +188,20 @@ h3 {
 h1 {
   font-family: "Staatliches", "Segoe UI Emoji", sans-serif;
   font-size: clamp(2.5em, 3.5vw, 7em);
-  margin-bottom: 0;
+  margin-bottom: 1.5em;
   line-height: 1.1;
   color: #000000;
   font-weight: 500;
+}
+
+.titulo-reviews {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 600;
+  color: #252422;
+  margin-bottom: 1em;  
+  margin-top: 1em;
   padding: 1rem;
 }
 
@@ -202,8 +211,6 @@ h2 {
   font-size: clamp(1.1rem, 1.3vw, 3rem);
   line-height: 1.2;
   margin-bottom: 0;
-  padding-left: 2em;
-  padding-right: 2em;
 }
 
 p {
@@ -332,8 +339,9 @@ audio::-webkit-media-controls-panel {
   justify-content: center;
   gap: 1rem; /* espacio entre la imagen y el audio */
 
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
+
 .avatar {
   width: 60px;
   height: 60px;
@@ -344,12 +352,12 @@ audio::-webkit-media-controls-panel {
 @media (max-width: 1000px) {
   .banner {
     padding-bottom: 0;
-    padding-top: 1.5rem;
+    padding-top: 0;
     /* para que no tape el menú los títulos */
   }
 
   .cuerpo {
-    max-width: 95vw;
+    max-width: 99vw; /* importante que sea max-width y no solo max para que no se generen los callouts mal en móvil */
     margin: 1rem auto;
     padding: 0 1rem;
     margin-top: 0;
@@ -367,14 +375,23 @@ audio::-webkit-media-controls-panel {
 
   h1 {
     padding: 0;
-    margin: 0;
+    font-size: 2rem;
+
+    margin-top: 1.7em;
+    margin-bottom: 1em;
+  }
+
+  .titulo-reviews{
+      font-size: 4rem;
+      padding: 0;
   }
 
   h2 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  }
- 
+    padding: 0;
+    margin: 0;
+    margin-right: 1px;
+    margin-left: 1px;
+  } 
 
   p {
     margin-bottom: clamp(5rem, 7vw, 10rem);
@@ -414,7 +431,6 @@ audio::-webkit-media-controls-panel {
     background:none; backdrop-filter:none;
     display:block;
   }
-
 
   .burger{
     display:block;
@@ -458,9 +474,11 @@ audio::-webkit-media-controls-panel {
   }
 
   button {
-  font-size: 1.2rem;
-  padding: 1rem 1.8rem;
-    }
+    font-size: 1.2rem;
+    padding: 1rem 1.8rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
 
 
   #menu-toggle{ display:none; }
