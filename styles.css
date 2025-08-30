@@ -23,9 +23,12 @@ button { /* sencillo */
   color: #151515;
   background: transparent;
   border: 1.5px solid #151515;
-  transition: all 0.3s ease;
-  box-shadow:    
-    0 2px 2px rgba(0,0,0,0.2);               
+  transition: all 0.3s ease; 
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);           
+}
+
+button:hover{
+  font-style: italic;
 }
 
 
@@ -59,7 +62,7 @@ button { /* sencillo */
   }
 }
 
-button:hover {
+.glow:hover {
   transform: translateY(-2px);
   background-position: 100% 0;
 }
@@ -321,7 +324,7 @@ a:hover {
   margin-top: 0;
   border: 2px solid rgba(255, 79, 221, 0.6);
   border-radius: 10px;
-  box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 0 4px #FF4FDD;
 }
 
 .subr {
@@ -441,6 +444,10 @@ audio::-webkit-media-controls-panel {
     border: 1px solid #FF4FDD;
     box-shadow: 0 0 10px #FF4FDD;
     padding-top: 1em;
+  }
+
+  .callout-linea {
+    box-shadow: 0 0 10px #FF4FDD;
   }
 
  .menu{
