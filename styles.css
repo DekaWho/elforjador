@@ -67,7 +67,7 @@ body {
   width: 100%;
   margin-top: 0;
 
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-bottom: 8rem;
 
   position: relative;
@@ -125,7 +125,7 @@ body {
   gap: 1rem;
   /* Espacio entre columnas */
 
-  max-width: 65vw;
+  max-width: 80vw;
   margin: 1rem auto;
   padding: 0 1rem;
   margin-top: 0;
@@ -320,6 +320,25 @@ a:hover {
 .emoji {
   width: 1.3em; 
   vertical-align: middle;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgba(0, 229, 255, 0.1);
+}
+
+.player-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* espacio entre la imagen y el audio */
+
+  margin-bottom: 3rem;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* círculo */
+  object-fit: cover;  /* recorta sin deformar */
 }
 
 @media (max-width: 1000px) {
