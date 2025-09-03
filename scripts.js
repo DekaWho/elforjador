@@ -5,7 +5,6 @@
       });
     });
 
-
 // Marcar menú activo
     function actualizarActiveLink() {
       const links = document.querySelectorAll(".menu .links a");
@@ -27,3 +26,14 @@
 
     // Ejecutar cada vez que cambie el hash (clic o scroll con hash)
     window.addEventListener("hashchange", actualizarActiveLink);
+
+
+// scroll del CTA de la hero section (con iluminacion del menú)
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (!section) return;
+
+  section.scrollIntoView({ behavior: 'smooth' });
+  history.pushState(null, null, `#${id}`);
+  actualizarActiveLink();
+}
