@@ -375,6 +375,13 @@ audio::-webkit-media-controls-panel {
   object-fit: cover;  /* recorta sin deformar */
 }
 
+.active {
+  color: #00E5FF !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.25em !important;
+  font-weight: 400 !important;
+}
+
 @media (max-width: 1000px) {
   .banner {
     padding-bottom: 0;
