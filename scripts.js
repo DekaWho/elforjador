@@ -10,16 +10,15 @@
       const links = document.querySelectorAll(".menu .links a");
       const currentHash = window.location.hash;
 
-      links.forEach(link => link.classList.remove("active"));
+      if (!currentHash) return; // sin hash no hace nada (para que /principios se mantenga iluminada)
 
-      if (currentHash) {
-        links.forEach(link => {
-          if (link.getAttribute("href") === currentHash) {
-            link.classList.add("active");
-          }
-        });
-      }
-    }
+      links.forEach(link => link.classList.remove("active"));
+      links.forEach(link => {
+        if (link.getAttribute("href") === currentHash) {
+          link.classList.add("active");
+        }
+      });
+  }
 
     // Ejecutar al cargar la página
     actualizarActiveLink();
