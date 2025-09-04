@@ -81,7 +81,7 @@ body {
   width: 100%;
   margin-top: 0;
 
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 8rem;
 
   position: relative;
@@ -202,7 +202,8 @@ h3 {
 h1 {
   font-family: "Staatliches", "Segoe UI Emoji", sans-serif;
   font-size: clamp(3em, 3.5vw, 7em);
-  margin-bottom: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
   line-height: 1.1;
   color: #000000;
   font-weight: 500;
@@ -352,7 +353,7 @@ a:hover {
 
 .emoji {
   width: 1.3em; 
-  vertical-align: middle;
+  vertical-align: text-bottom;
 }
 
 audio::-webkit-media-controls-panel {
