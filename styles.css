@@ -36,7 +36,7 @@ button:hover{
   color: #fff;
   font-size: 1.5rem;
   font-weight: 300;
-  padding: 0.8em 1.2em;
+  padding: 0.8em 1.2em; /*0.8 es arriba y abajo*/
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -50,7 +50,7 @@ button:hover{
     inset -2px -2px 6px rgba(0,0,0,0.4),      /* sombra interior abajo */
     0 6px 18px rgba(0,0,0,0.5);               /* sombra exterior */
   transition: background-position 0.3s ease;  
-  animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 1.8s ease-out infinite alternate;
 }
 
 @keyframes glow {
@@ -381,7 +381,7 @@ audio::-webkit-media-controls-panel {
 @media (max-width: 1000px) {
   .banner {
     padding-bottom: 0;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     /* para que no tape el menú los títulos */
   }
 
@@ -404,10 +404,10 @@ audio::-webkit-media-controls-panel {
 
   h1 {
     padding: 0;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
 
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 
