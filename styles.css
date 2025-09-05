@@ -202,6 +202,7 @@ h3 {
 
 h1 {
   font-family: "Staatliches", "Segoe UI Emoji", sans-serif;
+  text-transform: uppercase;
   font-size: clamp(3em, 3.5vw, 7em);
   margin-top: 0;
   margin-bottom: 1em;
