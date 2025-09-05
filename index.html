@@ -55,10 +55,9 @@
         </h2> -->
 
         <br>
-        <div style="text-align: center;">
-          <button class="glow" onclick="scrollToSection('mail-form')">
-              Copia la Fórmula Americana ➜
-          </button>
+
+        <div style="display: flex; justify-content: center;">
+          <div id="formPC"></div>
         </div>
 
       </div>
@@ -81,10 +80,9 @@
         </h2> -->
 
         <br>
+        <br>
         <div style="text-align: center;">
-          <button class="glow" onclick="scrollToSection('mail-form')">
-              Copia la Fórmula Americana<br>➜
-          </button>
+          <div id="formMobile"></div>          
         </div>
 
       </div>
@@ -265,10 +263,23 @@
 
       <p style="margin-top: 2em; margin-bottom: 1em;">
         2 minutos. Eso necesitas para entender la fórmula americana que <span style="background-color: #FFE066;">factura billones en su mercado...</span> y en España parece un secreto (porque casi ninguna tienda lo está exprimiendo aún)
-      </p>      
+      </p>    
     
+      
+      <div id="formBody"></div>
+  
+  <!-- p a modo de br -->
+  <p></p>
+  
+    <p class="firma" style="margin-top: 5rem; margin-bottom: 0; text-align: center;">↑</p>
 
-    <!--  Mail form -->
+</section>
+
+</div>
+
+
+<!--  Mail form template -->
+<template id="lite-form">
     <style type="text/css">
       @import url("https://assets.mlcdn.com/fonts.css?version=1750852");
     </style>
@@ -338,7 +349,7 @@
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper {
-        background-color: #fbfcff;
+        background-color: none;
 
         border-width: 0px;
         border-color: transparent;
@@ -508,20 +519,18 @@
         background-color: #ffffff !important;
         color: #a6a6a6 !important;
         border-color: #252422;
-        border-radius: 20px !important;
+        border-radius: 10px !important;
         border-style: solid !important;
         border-width: 1px !important;
         font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
         font-size: 1rem !important;
         height: auto;
         line-height: 21px !important;
-        margin-bottom: 0;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0.8rem !important;
+        width: 80% !important;
+        margin: 0 auto !important;
+        display: block !important;
+        padding: 0.7rem !important;
         box-sizing: border-box !important;
-        width: 100% !important;
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-webkit-input-placeholder,
@@ -839,8 +848,9 @@
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
-        /* background: linear-gradient(to left, #FF4FDD, #14E1FE); */
-/*         border-color: #14E1FE;
+        color: #fff;
+        /* background: linear-gradient(to left, #FF4FDD, #14E1FE); 
+        border-color: #14E1FE;
         border-style: solid;
         border-width: 1px;
         border-radius: 25px;
@@ -854,7 +864,7 @@
         margin: 0 !important;
         padding: 10px !important;
         width: 100%;
-        height: auto; */
+        height: auto;
         color: #fff;
         font-size: 1.2rem;
         font-weight: bold;
@@ -870,10 +880,10 @@
         background: linear-gradient(270deg, #FF4FDD, #b202f8, #FF4FDD);
         background-size: 200% 200%;
         box-shadow: 
-          inset 2px 2px 6px rgba(255,255,255,0.3),  /* brillo interior arriba */
-          inset -2px -2px 6px rgba(0,0,0,0.4),      /* sombra interior abajo */
-          0 6px 18px rgba(0,0,0,0.5);               /* sombra exterior */
-        transition: background-position 0.3s ease;
+          inset 2px 2px 6px rgba(255,255,255,0.3),  brillo interior arriba
+          inset -2px -2px 6px rgba(0,0,0,0.4),      sombra interior abajo
+          0 6px 18px rgba(0,0,0,0.5);               sombra exterior
+        transition: background-position 0.3s ease;*/
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
@@ -938,21 +948,9 @@
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-        /* color: white;    
-        background: linear-gradient(90deg, #00E5FF, #FF4FDD) !important;  
-        border: none !important;
-        border-radius: 8px !important;
-        box-shadow: none !important;
-        cursor: pointer;
-        font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif !important;
-        font-size: 20px !important;
-        font-weight: 700 !important;
-        line-height: 21px !important;
-        height: auto;
-        padding: 0.8rem 1.8rem;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; */
+        color: #fff;
+        
+        /*
         color: #fff;
         font-size: 1.4rem;
         font-weight: 300;
@@ -967,10 +965,11 @@
         background: linear-gradient(90deg, #00E5FF, #4F86C6, #00E5FF);
         background-size: 200% 200%;
         box-shadow: 
-          inset 2px 2px 6px rgba(255,255,255,0.3),  /* brillo interior arriba */
-          inset -2px -2px 6px rgba(0,0,0,0.4),      /* sombra interior abajo */
-          0 2px 8px rgba(0, 0, 0, 0.3);               /* sombra exterior */
-        transition: background-position 0.3s ease;      
+          inset 2px 2px 6px rgba(255,255,255,0.3),  brillo interior arriba
+          inset -2px -2px 6px rgba(0,0,0,0.4),      sombra interior abajo 
+          0 2px 8px rgba(0, 0, 0, 0.3);               sombra exterior
+        transition: background-position 0.3s ease;
+        */     
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
@@ -1295,7 +1294,7 @@
 
               <div class="ml-form-embedSubmit">
 
-                <button type="submit" class="primary">Ver la fórmula</button>
+                <button type="submit" class="glow"><img class="emoji" src="imgs/copy.svg"> Copia la fórmula americana</button>
 
                 <button disabled="disabled" style="display: none;" type="button" class="loading">
                   <div class="ml-form-embedSubmitLoad"></div>
@@ -1361,19 +1360,19 @@
       fetch("https://assets.mailerlite.com/jsonp/1628594/forms/158544190416881022/takel")
     </script>
 
+</template>
 
-  </div> <!-- callout rosa --> 
-  <!-- p a modo de br -->
-  <p></p>
-  
-    <p class="firma" style="margin-top: 5rem; margin-bottom: 0; text-align: center;">↑</p>
+<!-- Incrustar los forms -->
 
-</section>
+<!-- primero cargas la definición -->
+    <script src="scripts.js"></script>
 
-</div>
-
-
-  <script src="scripts.js"></script>
+<!-- luego haces las llamadas -->
+    <script>
+      insertForm('formPC');
+      insertForm('formMobile');
+      insertForm('formBody');
+    </script>
 </body>
 
 </html>

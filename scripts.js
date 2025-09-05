@@ -36,3 +36,11 @@ function scrollToSection(id) {
   history.pushState(null, null, `#${id}`);
   actualizarActiveLink();
 }
+
+// Incrustar los mailerLite forms
+
+  function insertForm(targetId) {
+    const template = document.getElementById('lite-form').content;
+    document.getElementById(targetId).appendChild(template.cloneNode(true));
+  }
+

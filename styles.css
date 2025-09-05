@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 18px;
+  font-family: "IBM Plex Sans", "Segoe UI Emoji", sans-serif;
 
   /* PALETA */
 
@@ -15,7 +16,7 @@ html {
 }
 
 
-button { /* sencillo */  
+/* button { //sencillo  
   padding: 0.8em 1.2em;
   border-radius: 8px;
   font-size: 0.8rem;
@@ -29,27 +30,27 @@ button { /* sencillo */
 
 button:hover{
   font-style: italic;
-}
+} */
 
 
-.glow{ /* button CTA glow */
+.glow{ 
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  padding: 0.8em 1.2em; /*0.8 es arriba y abajo*/
+  margin: 1.5rem 0;
+  padding: 0.7em 1.5em; /*el primero es arriba y abajo*/
   border: none;
   border-radius: 10px;
   cursor: pointer;
   letter-spacing: 0.05em;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  margin-top: 1rem;
-  /* background: linear-gradient(270deg, #FF4FDD, #b202f8, #FF4FDD); */
+  /* background: linear-gradient(270deg, #FF4FDD, #b202f8, #FF4FDD);*/
   background: linear-gradient(270deg, #00E5FF, #4F86C6, #00E5FF);
   background-size: 200% 200%;
   box-shadow: 
-    inset 2px 2px 6px rgba(255,255,255,0.3),  /* brillo interior arriba */
-    inset -2px -2px 6px rgba(0,0,0,0.4),      /* sombra interior abajo */
-    0 6px 18px rgba(0,0,0,0.5);               /* sombra exterior */
+    inset 2px 2px 6px rgba(255,255,255,0.3),  /* brillo interior arriba*/
+    inset -2px -2px 6px rgba(0,0,0,0.4);      /* sombra interior abajo*/
+    /*0 6px 18px rgba(0,0,0,0.5);                sombra exterior*/
   transition: background-position 0.3s ease;  
   animation: glow 1.8s ease-out infinite alternate;
 }
@@ -70,7 +71,6 @@ button:hover{
 
 
 body {
-  font-family: "IBM Plex Sans", "Segoe UI Emoji", sans-serif;
   color: #252422;
   margin: 0;
   padding: 0;
@@ -205,7 +205,7 @@ h1 {
   text-transform: uppercase;
   font-size: clamp(3em, 3.5vw, 7em);
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.9em;
   line-height: 1.1;
   color: #000000;
   font-weight: 500;
@@ -514,11 +514,10 @@ audio::-webkit-media-controls-panel {
   }
 
   .glow {
-    font-size: 1.2rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 3rem;
-    padding: 0.5em;
+    font-size: 1rem;
+    width: 70vw;
+    margin: 1.5rem 2rem; /*el primero es arriba y abajo*/
+    padding: 0.8rem 0.2rem;
   }
 
 
