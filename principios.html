@@ -31,6 +31,22 @@
       font-weight: 500;
       margin-top: 1.5em;
       margin-bottom: 0;
+    }   
+    
+    ol {
+      margin-top: 6em;
+    }
+
+    /* este li marker se aplica como ol marker también */
+    li::marker { 
+      color: #FF4FDD;
+      font-size: 1rem;
+    }
+
+    u {
+      text-decoration: underline;
+      text-underline-offset: 7px;
+      text-decoration-thickness: 0.1em;
     }
 
     @media (max-width: 1000px) {
@@ -43,21 +59,10 @@
       }
 
       ol {
-      color: #FF4FDD;
       margin-top: 3em;
       }
     }
 
-    ol {
-      color: #FF4FDD;
-      margin-top: 6em;
-    }
-
-    u {
-      text-decoration: underline;
-      text-underline-offset: 7px;
-      text-decoration-thickness: 0.1em;
-    }
   </style>
 </head>
 
@@ -75,13 +80,13 @@
 
     <ol>
       <li>
-        <p style="color: #252422; margin-bottom: 1em;"> <!-- para que el número se mantenga rosa -->
+        <p style="margin-bottom: 1em;"> <!-- para que el número se mantenga rosa -->
           Todo empieza desde el producto. Usaré los puntos fuertes para diferenciarlo de la competencia y hacerlo ver como algo único.
         </p>
       </li>
 
       <li>
-        <p style="color: #252422; margin-bottom: 1em;">
+        <p style="margin-bottom: 1em;">
         <strong>
           El objetivo del marketing es generar ventas ➜&nbsp;una empresa con mucha facturación puede centrarse en el largo plazo (seguir mejorando sus productos y darle mejor servicio al cliente) Todos ganamos. 
         </strong>  
@@ -89,13 +94,13 @@
       </li>
 
       <li>
-        <p style="color: #252422; margin-bottom: 1em;">
+        <p style="margin-bottom: 1em;">
         Mi objetivo egoísta es llegar a ser el referente nº&nbsp;1 del marketing directo (como Hormozi, o Bencivenga, pero español) En el futuro afirmaré ser el hispano que más ingresos ha generado para sus clientes, pero para eso necesito ayudar a empresas como la tuya.
         </p>
       </li>
 
       <li>
-        <p style="color: #252422; margin-bottom: 1em;">
+        <p style="margin-bottom: 1em;">
         <strong>
         Soy un fiel defensor de los sistemas con comisiones: generan motivación para dar lo mejor de uno mismo (no como los pagos a 60 días).
         </strong>

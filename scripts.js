@@ -10,7 +10,8 @@
       const links = document.querySelectorAll(".menu .links a");
       const currentHash = window.location.hash;
 
-      if (!currentHash) return; // sin hash no hace nada (para que /principios se mantenga iluminada)
+      //if (!currentHash) return; // sin hash no hace nada (para que /principios se mantenga iluminada al clicar desde la home)
+      //está comentado porque si ahora al pulsar en el menú Inicio no borra el hash de donde vienes
 
       links.forEach(link => link.classList.remove("active"));
       links.forEach(link => {
@@ -27,20 +28,27 @@
     window.addEventListener("hashchange", actualizarActiveLink);
 
 
-// scroll del CTA de la hero section (con iluminacion del menú)
-function scrollToSection(id) {
-  const section = document.getElementById(id);
-  if (!section) return;
+    
+    // Incrustar los mailerLite forms
+    
+    function insertForm(targetId) {
+      const template = document.getElementById('lite-form').content;
+      document.getElementById(targetId).appendChild(template.cloneNode(true));
+    }
 
-  section.scrollIntoView({ behavior: 'smooth' });
-  history.pushState(null, null, `#${id}`);
-  actualizarActiveLink();
-}
-
-// Incrustar los mailerLite forms
-
-  function insertForm(targetId) {
-    const template = document.getElementById('lite-form').content;
-    document.getElementById(targetId).appendChild(template.cloneNode(true));
-  }
-
+    insertForm('formPC');
+    insertForm('formMobile');
+    insertForm('formPCB');
+    insertForm('formMobileB');
+    
+    
+    // scroll del CTA de la hero section (con iluminacion del menú)
+    // ya no hay scroll porque hay varios forms
+    /*function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (!section) return;
+    
+      section.scrollIntoView({ behavior: 'smooth' });
+      history.pushState(null, null, `#${id}`);
+      actualizarActiveLink();
+    }*/
