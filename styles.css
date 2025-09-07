@@ -240,7 +240,7 @@ h2 {
 
 p {
   margin: 1em 0;
-  font-size: clamp(1.25rem, 1.3vw, 1.5rem);
+  font-size: clamp(1.1rem, 1.3vw, 1.5rem);
   margin-bottom: clamp(3rem, 5vw, 10rem);
   line-height: 1.7;
 }
@@ -266,12 +266,14 @@ del {
 }
 
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
+  width: 70%; 
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1rem;  
 }
 
 li {
-  font-size: clamp(1.3rem, 1.3vw, 1.5rem);
+  font-size: clamp(1rem, 1.3vw, 1.5rem);
   margin-bottom: 0.5em;
   padding-bottom: clamp(2rem, 1.5vw, 4rem);
   line-height: 1.7;
@@ -412,7 +414,7 @@ audio::-webkit-media-controls-panel {
     padding-right: 0.5rem;
 
     font-size: 1.6rem;
-    margin-top: 1.8rem;
+    margin-top: 2rem;
     margin-bottom: 0.8rem;
     text-align: left;
   }
@@ -425,6 +427,13 @@ audio::-webkit-media-controls-panel {
   .titulo-hr {
     font-size: clamp(3em, 4.5vw, 7em);
     margin-top: 1em;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 2rem;
+    width: 97%;        /* ocupa todo el ancho */
+    box-sizing: border-box;
   }
 
   h2 {
@@ -480,9 +489,9 @@ audio::-webkit-media-controls-panel {
     position: fixed;
     right: 0;
     top: 0;
-    padding:.7rem .9rem;
-
     font-size: 1rem;
+    padding: .5em .7em;
+
     color:#fff; cursor:pointer;
     background: rgba(21,21,21,.45);
     backdrop-filter: blur(6px);
