@@ -393,7 +393,7 @@ audio::-webkit-media-controls-panel {
 
   .cuerpo {
     max-width: 99vw; /* importante que sea max-width y no solo max para que no se generen los callouts mal en móvil */
-    margin: 1rem auto;
+    margin: 0 auto;
     padding: 0 1rem;
     margin-top: 0;
   }
