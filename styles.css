@@ -84,7 +84,7 @@ body {
   width: 100%;
   margin-top: 0;
 
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   padding-bottom: 4rem;
 
   position: relative;
@@ -117,7 +117,8 @@ body {
 }
 
 .links a {
-  font-weight: 200;
+  font-size: 0.9rem;
+  font-weight: 300;
   color: white;
   text-decoration: none;
 }
@@ -206,6 +207,13 @@ h1 {
   color: #151515;
   font-weight: 500;
   text-align: center;
+}
+
+.pre-titulo {
+  margin-bottom: 1.5rem;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .titulo-reviews {
@@ -355,7 +363,7 @@ a:hover {
 
 .emoji {
   width: 1.3em; 
-  vertical-align: text-bottom;
+  vertical-align:bottom;
 }
 
 audio::-webkit-media-controls-panel {
@@ -408,12 +416,18 @@ audio::-webkit-media-controls-panel {
     /* visible en móviles */
   }
 
+  .pre-titulo {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+
   h1 {
     padding: 0;
     padding-left: 0.5rem;
-    padding-right: 0.4rem;
+    padding-right: 2px;
 
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-top: 0.5rem;
     margin-bottom: 0.8rem;
     text-align: left;
@@ -522,7 +536,7 @@ audio::-webkit-media-controls-panel {
 
   .links a {
     text-decoration:none;
-    font-size:1.15rem;
+    font-size:1rem;
   }
 
   .glow {
