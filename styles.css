@@ -410,8 +410,8 @@ audio::-webkit-media-controls-panel {
 
   h1 {
     padding: 0;
-    padding-left: 1rem;
-    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.8rem;
 
     font-size: 1.9rem;
     margin-top: 0.5rem;
