@@ -4,38 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>David Varea (El forjador)</title>
+  <title>El forjador (David Varea)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Sedgwick+Ave+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&family=Playfair+Display&family=Fjalla+One&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="estilo.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="imgs/favicon48.png">
 
-  <meta property="og:title" content="David Varea (El forjador)">
+  <meta property="og:title" content="El forjador (David Varea)">
   <meta property="og:description" content="Si estás al borde de un ataque de nervios porque trabajas duro pero tu negocio no crece como mereces... Usa la fórmula americana 🇺🇸">
   <meta property="og:image" content="https://elforjador.com/imgs/banner.webp">
   <meta property="og:url" content="https://elforjador.com">
   <meta property="og:type" content="website"> 
 
-  <script src="scripts.js" defer></script> <!--defer para que cargue primero el DOM del HTML y ejecute el JS al final-->
+  <script src="forms.js" defer></script> <!--defer para que cargue primero el DOM del HTML y ejecute el JS al final-->
 </head>
 
 <body>
-  <nav class="menu">
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="burger">&#9776;</label>
-
-    <div class="links">
-      <a href="#">[ copia la fórmula ]</a>
-      <a href="#sobre-mi">[ quién soy ]</a>
-      <a href="#reviews">[ qué opinan de mí ]</a>
-    </div>
-  </nav>
-
-  <div class="banner">
     <!-- Este solo se ve en PC -->
     <section class="hero">
       <div class="hero-image">
@@ -50,24 +38,20 @@
         
         <!-- los estilos no son iguales en PC y móvil -->
         <ul style="color: rgb(245, 252, 255);">
-          En 4 minutos entiendes:
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem; margin-top: 2rem; font-weight: 500; color: white;">
+          En menos de 4 minutos vas a entender:
+          <li style="line-height: 1.2; padding: 0; margin-bottom: 1rem; margin-top: 2rem; font-weight: 500; color: white;">
             La forma más simple y barata de crear picos de venta (sin necesidad de descuentos ni productos nuevos)
           </li>
 
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem;">
+          <li style="line-height: 1.2; padding: 0; margin-bottom: 1rem;">
             Una tienda online de tambores convirtió en clientes a gente que NO compró al entrar en su web ¿Qué hicieron? Spoiler: no fue anuncios de retargeting
           </li>
 
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem; font-weight: 500; color: white;">
-            Lo que hacen en EEUU para evitar que un cliente se enfríe después de la primera compra
-          </li>
-
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 2rem;">
+          <li style="line-height: 1.2; padding: 0; margin-bottom: 1rem; font-weight: 500; color: white;">
             Cómo aumentar (en piloto automático) el ticket promedio de tu cliente y las veces que compra. Sin usar redes sociales ni bombardearlo con anuncios
           </li>
 
-          
+          En España esta fórmula parece un secreto... porque muy pocas empresas la están exprimiendo. Tú puedes tenerla en tu correo ya mismo.      
         </ul>
 
         <div style="display: flex; justify-content: center;">
@@ -88,19 +72,20 @@
         <!-- los estilos no son iguales en PC y móvil -->
 
         <ul style="color: rgb(245, 252, 255);">
-          En 4 minutos entiendes:
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem; margin-top: 1rem; font-weight: 500; color: white;">
+          En menos de 4 minutos vas a entender:
+          <li style="line-height: 1.2; padding: 0; margin-bottom: 1rem; margin-top: 1rem; font-weight: 500; color: white;">
             La forma más simple y barata de crear picos de venta (sin necesidad de descuentos ni productos nuevos)
           </li>
 
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem;">
+          <li style="line-height: 1.2; padding: 0; margin-bottom: 1rem;">
             Una tienda online de tambores convirtió en clientes a gente que NO compró al entrar en su web ¿Qué hicieron? Spoiler: no fue anuncios de retargeting
           </li>
 
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 2rem; font-weight: 500; color: white;">
+          <li style="line-height: 1.2; padding: 0; margin-bottom: 2rem; font-weight: 500; color: white;">
             Cómo aumentar (en piloto automático) el ticket promedio de tu cliente y las veces que compra. Sin usar redes sociales ni bombardearlo con anuncios
           </li>
-          
+
+          Todo esto al instante en tu correo. Ya mismo.             
         </ul>
 
         <div style="text-align: center;">
@@ -109,268 +94,10 @@
 
       </div>
 
-      <div class="heroM-image">
-        <img src="imgs/wordsmithMovil.webp">
-      </div>
-    </section>
-  </div> <!--banner-->
-
-  <div class="cuerpo">
-
-    <p>
-      Cada día <u style="text-decoration-color: #F40600;">desaparecen 68 negocios</u> en España ➜&nbsp;Esta es la cruda realidad del país (dato oficial del INE para 2024) Y no solo cierran las tiendas del barrio...
-    </p>
-
-    <p>
-      <strong>
-        También bajan la persiana empresas con logos bonitos, con perfiles en redes y hasta con un buen historial de clientes. En definitiva negocios que <span style="background-color: rgba(0, 229, 255, 0.4);">parecen estables. ¿Por qué?</span>
-      </strong>
-    </p>
-
-    <p>
-      Porque en un mundo <u style="text-decoration-color: #FF4FDD; text-decoration-style: wavy; text-decoration-thickness: 1px;">tan frenético y cambiante</u> como el de hoy la estabilidad es un espejismo. Sobrevive quien tiene más hambre de crecer. Yo soy:
-    </p>
-    
-  <section id="sobre-mi">
-
-    <p style="font-size: clamp(2em, 2.5vw, 5em); color: #00E5FF; font-weight: 600; text-align: center; margin-bottom: 1rem; line-height: 1;">
-        DAVID VAREA <img class="emoji" src="imgs/handshake.svg" alt="🤝">
-    </p>
-
-    <div class="callout-azul">
-
-    <p>
-      Trabajo con negocios que quieren transformar visitas a su web en <u>clientes "adictos" a comprar una y otra vez</u> (y felices de hacerlo).
-    </p>
-
-    <p>
-      <strong>
-        No soy <em style="font-weight: 500;">un creativo</em> ni hago <em style="font-weight: 500;">branding para multinacionales</em> ➜&nbsp;Soy el forjador, un herrero de las ventas recurrentes.
-      </strong>
-    </p>
-
-
-    <p style="margin-bottom: 1em;">
-      Desde 2019 he trabajado junto a grandes influencers. Tiempo después empecé a usar la fórmula americana en otras empresas más allá de marcas personales.
-    </p>
-
-    </div>
-  </section>
-
-  <section id="reviews">
-
-    <h1 class="titulo-reviews">
-        Esto es lo que opinan de mi trabajo
-    </h1>
-
-      <div class="player-container">
-        <img class="avatar" src="reviews/rioboo.webp">
-
-        <audio controls controlslist="nodownload noplaybackrate">
-          <source src="reviews/rioboo.mp3" type="audio/mpeg">
-          Tu navegador no soporta audio HTML5.
-        </audio>
-      </div>
-
-      <p>
-        Has escuchado a Rioboo. Es creador de contenido y cofundador de CORI (e-commerce de café) Aunque no sigas el mundo influencers igual te suena por haberlo visto con Ibai.
-      </p>
-
-      <p>
-        <strong>
-          Antes de seguir mostrándote <span style="background-color: #FFE066;">la infinidad de opiniones</span> sobre mí ➜&nbsp;Me llamo David pero en internet me conocen como Deka (soy dekawho en redes) Seguimos:
-        </strong>
-      </p>
-
-      <div class="player-container">
-        <img class="avatar" src="reviews/chuso.jpg">
-
-        <audio controls controlslist="nodownload noplaybackrate">
-          <source src="reviews/chuso.mp3" type="audio/mpeg">
-          Tu navegador no soporta audio HTML5.
-        </audio>
-      </div>
-
-      <p>
-        Este es Chuso Montero. Abrimos su canal desde 0 y lo llevamos hasta 109.500 seguidores potenciando su personalidad. Aquí tienes la buena percepción que tiene su audiencia de nosotros: 
-      </p>
-
-      <a href="reviews/chuso01.webp" target="_blank">
-        <img src="reviews/chuso01.webp" width="100%">
-      </a>
-      <br>
-
-      <a href="reviews/chuso02.webp" target="_blank">
-        <img src="reviews/chuso02.webp" width="100%">
-      </a>
-      <br>
-
-      <a href="reviews/chuso03.webp" target="_blank">
-        <img src="reviews/chuso03.webp" width="100%">
-      </a>
-      <br>
-
-      <img src="reviews/magnates.webp" width="100%">
-
-      <p>
-        Este último es Carlos Lana. Uno de los editores de Magnates Media (un canal en inglés con 185 millones de reproducciones en vídeos largos) Después de ver una de las piezas en las que yo había trabajado me escribió para felicitarme.
-      </p>
-
-      <div class="player-container">
-        <img class="avatar" src="reviews/lou.jpg">
-
-        <audio controls controlslist="nodownload noplaybackrate">
-          <source src="reviews/lou.mp3" type="audio/mpeg">
-          Tu navegador no soporta audio HTML5.
-        </audio>
-      </div>
-
-      <img src="reviews/lou.webp" width="100%">
-
-      <p>
-        Es Loulogio. Igual te suena su nombre. Fue uno de los primeros españoles en viralizarse con el nacimiento de youtube. Millones de visitas cuando tener solo mil ya era un logro. Hizo vídeos míticos como «La Batamanta». En esa época no trabajábamos juntos pero años después sí lo hicimos.
-      </p>
-
-      <img src="reviews/padre.webp" width="100%">
-
-      <p>
-        Esta es la review más importante, la de mis padres.
-      </p>
-
-      <iframe width="100%" src="https://www.youtube-nocookie.com/embed/G4j2lOfzXJE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-      <p>
-        Outconsumer: otro de los padres de Youtube en español. Es alguien muy respetado por la comunidad gamer y por otros creadores de renombre.
-      </p>
-
     </section>
 
-    <p style="font-size: clamp(2em, 2.5vw, 5em); color:#FF4FDD; font-weight: 600; text-align: center; margin-bottom: 1rem; line-height: 1;">
-      Y APRENDÍ ESTO
-    </p>
 
-    <div class="callout-rosa">
-
-    <p>      
-        Después de trabajar con todos ellos vi que la receta americana <img class="emoji" src="imgs/usFlag.svg" alt="🇺🇸"> se puede aplicar en muchos tipos de negocio. Desde marcas personales, tiendas online o fitness.
-    </p>
-
-    <p style="margin-bottom: 1rem; font-weight: bold;">
-       Pero <span style="color: #FF4FDD;">no sirve para negocios impersonales</span> como <em>dropshipping</em>, Amazon FBA o canales automatizados. Tampoco para servicios puntuales como cerrajeros o electricistas.
-    </p>
-
-    </div>
-
-    <p>
-      El mercado americano factura billones usando esta fórmula pero en España parece un secreto (porque casi nadie la está exprimiendo) ¿Será que pensamos que <span style="background-color: #FFE066;">aquí no estamos a la altura?</span>
-    </p>
-
-    <section id="mail-form">
-
-    <p style="
-      font-family: 'Staatliches', sans-serif;
-      font-size: clamp(4em, 4.5vw, 7em);
-      text-align: center;
-      font-weight: 500;
-      line-height: 1;
-      margin: 0;">
-        DESCÚBRELA
-    </p>
-
-    <hr style="background-color: #00E5FF;
-                border: none;
-                height: 0.2rem;
-                margin: 0;
-                
-                position: relative;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 99vw; ">
-  
-
-</section>
-
-</div>
-
-<div class="banner" style="margin: 0; padding-bottom: 0;">
-<!-- Este solo se ve en PC -->
-    <section class="hero">
-      <div class="hero-image">
-        <img src="imgs/wordsmith.webp">
-      </div>
-
-      <div class="hero-text">
-
-        <h1 style="color: #00E5FF;">
-          Si estás al borde de un ataque de nervios porque <span style="color:#FF4FDD;">trabajas duro pero tu negocio no crece como mereces...</span> Usa la fórmula americana <img class="emoji" src="imgs/usFlag.svg" alt="🇺🇸">
-        </h1>
-        
-        <!-- los estilos no son iguales en PC y móvil -->
-        <ul style="color: rgb(245, 252, 255);">
-          En 4 minutos entiendes:
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem; margin-top: 2rem; font-weight: 500; color: white;">
-            La forma más simple y barata de crear picos de venta (sin necesidad de descuentos ni productos nuevos)
-          </li>
-
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem;">
-            Una tienda online de tambores convirtió en clientes a gente que NO compró al entrar en su web ¿Qué hicieron? Spoiler: no fue anuncios de retargeting
-          </li>
-
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem; font-weight: 500; color: white;">
-            Lo que hacen en EEUU para evitar que un cliente se enfríe después de la primera compra
-          </li>
-
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 2rem;">
-            Cómo aumentar (en piloto automático) el ticket promedio de tu cliente y las veces que compra. Sin usar redes sociales ni bombardearlo con anuncios
-          </li>
-
-          
-        </ul>
-
-        <div style="display: flex; justify-content: center;">
-          <div id="formPC"></div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- Este solo se ve en móvil -->
-    <section class="heroM">
-      <div class="hero-text"> 
-        <h1 style="color: #00E5FF;">
-          Si estás al borde de un ataque de nervios porque <span style="color:#FF4FDD;">trabajas duro pero tu negocio no crece como mereces...</span> Usa la fórmula americana <img class="emoji" src="imgs/usFlag.svg" alt="🇺🇸">
-        </h1>
-
-        <!-- los estilos no son iguales en PC y móvil -->
-
-        <ul style="color: rgb(245, 252, 255);">
-          En 4 minutos entiendes:
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem; margin-top: 1rem; font-weight: 500; color: white;">
-            La forma más simple y barata de crear picos de venta (sin necesidad de descuentos ni productos nuevos)
-          </li>
-
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 1rem;">
-            Una tienda online de tambores convirtió en clientes a gente que NO compró al entrar en su web ¿Qué hicieron? Spoiler: no fue anuncios de retargeting
-          </li>
-
-          <li style="line-height: 1.2; font-size: 0.8rem; padding: 0; margin-bottom: 2rem; font-weight: 500; color: white;">
-            Cómo aumentar (en piloto automático) el ticket promedio de tu cliente y las veces que compra. Sin usar redes sociales ni bombardearlo con anuncios
-          </li>
-          
-        </ul>
-
-        <div style="text-align: center;">
-          <div id="formMobile"></div>          
-        </div>
-
-      </div>
-
-      <div class="heroM-image">
-        <img src="imgs/wordsmithMovil.webp">
-      </div>
-    </section>
-</div> <!--banner-->
+  <p class="firma" style="margin-top: 3rem; margin-bottom: 0; text-align: center;">↑</p>
 
 
 <!--  Mail form template -->
@@ -624,7 +351,7 @@
         width: 80% !important;
         margin: 0 auto !important;
         display: block !important;
-        padding: 0.5rem 1rem !important;
+        padding: 0.6rem 1rem !important;
         box-sizing: border-box !important;
         box-shadow: inset 2px 2px 3px rgba(0,0,0,0.4),
                     1px 1px 5px rgba(0,0,0,0.1) !important; 
@@ -1274,7 +1001,7 @@
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p {
         color: #000000;
         font-family: "IBM Plex Sans", "Segoe UI Emoji", sans-serif;
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         margin: 0;
         padding: 0;
       }
@@ -1287,11 +1014,13 @@
 
       @media (max-width: 768px) {
         #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p {
-          font-size: 0.5rem !important;
+          font-size: 0.65rem !important;
+          padding-left: 3rem; padding-right: 3rem;
         }
 
         #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p {
-          font-size: 0.5rem !important;
+          font-size: 0.65rem !important;
+          padding-left: 3rem; padding-right: 3rem;
         }
       }
     </style>
@@ -1366,7 +1095,7 @@
 
 
 
-                  <p style="margin-top: 0; margin-bottom: 2em; text-align: center; color: #a6a6a6;">Las burocráticas y aburridas políticas de privacidad están <a href="/privacidad" target="_blank" style="color: #a6a6a6;">aquí</a></p>
+                  <p style="margin-top: 0; margin-bottom: 2em; text-align: center; color: #a6a6a6;">Las burocráticas y aburridas políticas de privacidad están <a href="/privacidad" target="_blank" style="color: #a6a6a6;">aquí</a> (Resumen: te voy a mandar correos. Varias veces)</p>
 
 
 
