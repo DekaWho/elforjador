@@ -229,12 +229,13 @@ a:hover {
     padding-left: 1.2rem;
     width: 99%;        /* ocupa todo el ancho */
     box-sizing: border-box;
-    margin-top: 0rem;
+    margin: 0rem;
     font-size: 0.9rem;
   }
 
   li{
     font-size: 0.9rem;
+    margin: 0;
   }
 
   h2 {
