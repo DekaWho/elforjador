@@ -148,14 +148,14 @@ strong {
   font-weight: 600;
 }
 
-ul {
+ul{
   width: 85%; 
   padding: 0;
   margin: 3rem auto;
   font-size: clamp(1.2rem, 1.1vw, 2rem);
 }
 
-li {
+li{
   font-size: clamp(1rem, 1.2vw, 2rem);
   margin-bottom: 0.5em;
   padding-bottom: clamp(2rem, 1.5vw, 4rem);
@@ -225,12 +225,16 @@ a:hover {
     text-align: left;
   }
 
-  ul {
+  ul{
     padding-left: 1.2rem;
     width: 99%;        /* ocupa todo el ancho */
     box-sizing: border-box;
     margin-top: 0rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  li{
+    font-size: 0.9rem;
   }
 
   h2 {
@@ -246,7 +250,7 @@ a:hover {
     margin-bottom: clamp(5rem, 7vw, 10rem);
   }
 
-    .glow {
+  .glow {
     font-size: 1rem;
     width: 70vw;
     margin: 0 2rem; /*el primero es arriba y abajo*/
