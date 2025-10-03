@@ -13,8 +13,7 @@ html{
 
   color: #FFE066;
   color: #F40600;
-  color: #CCFF66;
-  color: #5D2E8C;
+  color: #BAFF29;
   */
 }
 
@@ -176,6 +175,7 @@ body{
   /* parte más pequeña */
   flex: 3;
   display: flex;
+  flex-direction: column;
   align-items: center;     /* centra vertical en el eje cruzado */
   justify-content: center; /* centra horizontal en el eje principal */
 }
@@ -222,6 +222,7 @@ h1{
   color: white;
   font-weight: 500;
   text-align: center;
+  hyphens: none;
 }
 
 
@@ -342,17 +343,18 @@ a:hover{
   margin: 1rem auto;
   /* centrado horizontal */
   padding: 0 1em;
-  margin-bottom: 0;
+  margin-bottom: 5rem;
 
-  border: 2px solid #FFE066;
+  border: 3px solid #FFE066;
   border-radius: 10px;
   box-shadow: 0 0 20px #FFE066;
   padding: 2rem;
 }
 
 .callout p{
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
+
 
 
 ::selection{
@@ -412,6 +414,14 @@ audio::-webkit-media-controls-panel{
   line-height: 1.2;
   color: #FF4FDD;
   font-weight: 300;
+  hyphens: none;
+}
+
+.banner video{
+  width: 20vw;
+  max-width: 350px;
+  height:auto;
+  border-radius:20px;
 }
 
 .active{
@@ -423,8 +433,7 @@ audio::-webkit-media-controls-panel{
 
 @media (max-width: 900px){
   .banner{
-    padding: 0;
-    padding-top: 1.2rem;
+    padding: 1rem 0;
   }
 
   .cuerpo{
@@ -442,12 +451,6 @@ audio::-webkit-media-controls-panel{
   .heroM{
     display: block;
     /* visible en móviles */
-  }
-
-  .hero-image{
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
   }
 
   .pre-titulo{
@@ -531,6 +534,10 @@ audio::-webkit-media-controls-panel{
     overflow-x: hidden;
   }
 
+  .callout p{
+    margin-bottom: 2rem;
+  }
+
   .btn{
     font-size: 1.2rem;
     margin: 1rem auto; /*el primero es arriba y abajo*/
@@ -550,7 +557,7 @@ audio::-webkit-media-controls-panel{
     position: fixed;
     right: 0;
     top: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: .5em .7em;
 
     color:#fff; cursor:pointer;
@@ -602,8 +609,7 @@ audio::-webkit-media-controls-panel{
     gap: 0;
     padding: 0 2px;
     justify-items: center;
-    margin: 2rem auto;
-    margin-top: 10px;
+    margin: 1rem 0;
   }
 
   .feature-title{
@@ -612,6 +618,13 @@ audio::-webkit-media-controls-panel{
 
   .feature img{
     width: 65px;
+  }
+
+  .banner video{
+    width:50vw;
+    height:auto;
+    border-radius:20px;
+    margin: 1rem auto;
   }
 
   #menu-toggle{ display:none; }
