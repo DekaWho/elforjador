@@ -216,7 +216,7 @@ h2{
   gap: 0;
   align-items: center;
   justify-content: center; /* centra horizontal en el eje principal */
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .sobre{
