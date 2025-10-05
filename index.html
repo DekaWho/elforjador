@@ -21,11 +21,7 @@
   <meta property="og:url" content="https://www.elforjador.com">
   <meta property="og:type" content="website"> 
 
-  <script src="scripts/scripts.js" defer></script> <!--defer para que cargue primero el DOM del HTML y ejecute el JS al final-->
-                <script defer>
-                  insertForm('formPC');
-                  insertForm('formMobile');
-                </script>
+  <!--el script lo llamo debajo en vez de en defer para poder llamar a la función externamente-->
 </head>
 
 <body>
@@ -1187,6 +1183,12 @@
     </script>
 
 </template>
+
+<script src="scripts/scripts.js"></script>
+<script>
+  insertForm('formPC');
+  insertForm('formMobile');
+</script>
 
 </body>
 </html>
